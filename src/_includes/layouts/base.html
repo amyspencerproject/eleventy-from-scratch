@@ -7,10 +7,7 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    {% block content %}
-        <p>
-            Content that will appear if file which extends base.html doesn't have block content.
-        </p>
-    {% endblock %}
+    {% include "partials/site-head.html" %}
+    <main tabindex="-1" id="main-content">{% block content %}{% endblock %}</main>
   </body>
 </html>
