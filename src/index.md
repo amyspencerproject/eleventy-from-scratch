@@ -9,7 +9,7 @@ intro:
   buttonUrl: '/work'
   image: '/images/bg/toast.jpg'
   imageAlt: 'Buttered toasted white bread'
-  primaryCTA:
+primaryCTA:
   title: 'This is an agency that doesn’t actually exist'
   summary: 'This is the project site you build when you take the “Learn
     Eleventy From Scratch” course so it is all made up as a pretend
