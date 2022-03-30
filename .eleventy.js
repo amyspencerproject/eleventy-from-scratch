@@ -13,6 +13,11 @@ module.exports = config => {
     );
   });
 
+  // Returns a collection of blog posts in reverse date order
+  config.addCollection('blog', collection => {
+    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
+  });
+
   // Set directories to pass through to the dist folder
   config.addPassthroughCopy('./src/images/');
     return {
