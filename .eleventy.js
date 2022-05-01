@@ -38,6 +38,13 @@ module.exports = config => {
       return Number(a.fileSlug) > Number(b.fileSlug) ? 1 : -1;
     });
 });
+
+module.exports = function(eleventyConfig) {
+  // Watch CSS files for changes
+  eleventyConfig.setBrowserSyncConfig({
+		files: './_site/css/**/*.css'
+	});
+};
   
     return {
       markdownTemplateEngine: 'njk',
